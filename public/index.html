@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CDA</title>
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="frontend_assets/img/cda_logo.png" type="image/x-icon" />
+
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" type="text/css" />
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="frontend_assets/css/libs.bundle.css" type="text/css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="frontend_assets/css/theme.bundle.css" id="stylesheetLight" type="text/css" />
+  <link rel="stylesheet" href="frontend_assets/css/theme-dark.bundle.css" id="stylesheetDark" type="text/css" />
+
+  <link rel="stylesheet" href="frontend_assets/css/main.css" id="stylesheetDark" type="text/css" />
+
+  <style>
+    body {
+      display: none;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+  </noscript>
+
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+
+
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Vendor JS -->
+  <script src="frontend_assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="frontend_assets/js/theme.bundle.js"></script>
+</body>
+
+</html>
