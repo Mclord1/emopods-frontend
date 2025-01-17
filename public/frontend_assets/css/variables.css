@@ -1,0 +1,49 @@
+:root {
+    --v-primary-white: #fff;
+    --v-primary-accent: #729DA4;
+    --v-primary-gray-lighten: #F8F8F8;
+    --v-primary-light-gray: #EDEFF2;
+    --v-primary-text-dark: #000000;
+    --v-primary-alert-danger-text: #F0475E;
+    --v-primary-alert-danger: #FEECEE;
+    --v-primary-alert-success-text: #1D871D;
+    --v-primary-alert-success: #EEFBEE;
+    --v-primary-alert-blue: #F0F5FF;
+    --v-primary-alert-blue-text: #007FFF;
+    --v-primary-alert-warning-text: #E58619;
+    --v-primary-alert-warning: #FFF7EB;
+    --v-primary-alert-purple: #EFEDFD;
+    --v-primary-alert-orange: #FEF3EC;
+    --v-primary-text-dark-neutral: #3C4049;
+    --v-primary-text-light-neutral: #DFE1E5;
+    --v-primary-text-gray: #5C6370;
+    --v-primary-text-gray-darker: #7E8695;
+    --v-primary-avatar-success: #1D871D;
+    --v-primary-avatar-danger: #A5091E;
+    --v-primary-avatar-blue: #2812A1;
+    --v-primary-muted-text: #ABB0BA;
+
+    --font-size-page-header: 24px;
+    --font-size-body: 14px;
+    --font-size-table-header: 14px;
+    --font-size-label-header: 14px;
+    --font-size-section-header: 16px;
+    --font-size-input: 14px;
+    --font-size-stats-value: 36px;
+    --font-color-body: #3C4049;
+    --border-color: #d2d5da;
+
+    /* Button Colors */
+    --btn-primary: #007bff;
+    --btn-primary-bg: #cce5ff;
+    --btn-success: #28a745;
+    --btn-success-bg: #d4edda;
+    --btn-danger: #dc3545;
+    --btn-danger-bg: #f8d7da;
+    --btn-warning: #ffc107;
+    --btn-warning-bg: #fff3cd;
+    --btn-info: #17a2b8;
+    --btn-info-bg: #d1ecf1;
+    --btn-secondary: #6c757d;
+    --btn-secondary-bg: #e2e3e5;
+}

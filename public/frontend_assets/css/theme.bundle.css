@@ -42,7 +42,7 @@
     --bs-black-rgb: 18, 38, 63;
     --bs-body-color-rgb: 18, 38, 63;
     --bs-body-bg-rgb: 249, 251, 253;
-    --bs-font-sans-serif: "Graphik",
+    --bs-font-sans-serif: "GG Sans",
         sans-serif !important;
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, hsla(0, 0%, 100%, .15), hsla(0, 0%, 100%, 0));
@@ -15591,27 +15591,27 @@ button:focus {
 }
 
 @font-face {
-    font-family: Graphik;
+    font-family: "GG Sans";
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/graphik/GraphikRegular.otf);
-    src: url(../fonts/graphik/GraphikRegular.otf) format("embedded-opentype"), url(../fonts/graphik/GraphikRegular.otf) format("woff"), url(../fonts/graphik/GraphikRegular.otf) format("truetype")
+    src: url(../fonts/gg-sans/ggsansRegular.ttf);
+    src: url(../fonts/gg-sans/ggsansRegular.ttf) format("embedded-opentype"), url(../fonts/gg-sans/ggsansRegular.ttf) format("woff"), url(../fonts/gg-sans/ggsansRegular.ttf) format("truetype")
 }
 
 @font-face {
-    font-family: Graphik;
+    font-family: "GG Sans";
     font-style: normal;
     font-weight: 500;
-    src: url(../fonts/graphik/GraphikMedium.otf);
-    src: url(../fonts/graphik/GraphikMedium.otf) format("embedded-opentype"), url(../fonts/graphik/GraphikMedium.otf) format("woff"), url(../fonts/graphik/GraphikMedium.otf) format("truetype")
+    src: url(../fonts/gg-sans/ggsansMedium.ttf);
+    src: url(../fonts/gg-sans/ggsansMedium.ttf) format("embedded-opentype"), url(../fonts/gg-sans/ggsansMedium.ttf) format("woff"), url(../fonts/gg-sans/ggsansMedium.ttf) format("truetype")
 }
 
 @font-face {
-    font-family: Graphik;
+    font-family: "GG Sans";
     font-style: normal;
     font-weight: 600;
-    src: url(../fonts/graphik/GraphikSemibold.otf);
-    src: url(../fonts/graphik/GraphikSemibold.otf) format("embedded-opentype"), url(../fonts/graphik/GraphikSemibold.otf) format("woff"), url(../fonts/graphik/GraphikSemibold.otf) format("truetype")
+    src: url(../fonts/gg-sans/ggsansSemibold.ttf);
+    src: url(../fonts/gg-sans/ggsansSemibold.ttf) format("embedded-opentype"), url(../fonts/gg-sans/ggsansSemibold.ttf) format("woff"), url(../fonts/gg-sans/ggsansSemibold.ttf) format("truetype")
 }
 
 @font-face {
