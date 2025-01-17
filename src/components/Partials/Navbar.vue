@@ -1,544 +1,216 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="topnav">
-        <div class="container">
-
-            <!-- Brand -->
-            <a class="navbar-brand mr-10" href="/">
-                <img src="../../assets/img/cda_logo.jpeg" alt="..." class="navbar-brand-img">
-            </a>
-
-            <!-- Collapse -->
-            <div class="collapse navbar-collapse me-lg-auto" id="navbar">
-
-                <!-- Form -->
-                <form class="mt-4 mb-3 d-md-none">
-                    <input type="search" class="form-control form-control-rounded" placeholder="Search" aria-label="Search">
-                </form>
-
-                <!-- Navigation -->
-                <ul class="navbar-nav me-lg-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasDemo" aria-controls="offcanvasDemo">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasDemo" aria-controls="offcanvasDemo">
-                            Members
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="topnavDashboards" role="button" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-                            Access Control
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="topnavDashboards">
-                            <li>
-                                <a class="dropdown-item active" href="index.html">
-                                    Roles
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item " href="dashboard-project-management.html">
-                                    Permissions
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item " href="dashboard-ecommerce.html">
-                                    Users
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-
-            <!-- Toggler -->
-            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Form -->
-            <form class="form-inline me-4 d-none d-lg-flex">
-                <div class="input-group input-group-rounded input-group-merge input-group-reverse" data-list='{"valueNames": ["name"]}'>
-
-                    <!-- Input -->
-                    <input type="search" class="form-control dropdown-toggle list-search" data-bs-toggle="dropdown" placeholder="Search"
-                        aria-label="Search">
-
-                    <!-- Icon -->
-                    <div class="input-group-text">
-                        <i class="fe fe-search"></i>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="dropdown-menu dropdown-menu-card">
-                        <div class="card-body">
-
-                            <!-- List group -->
-                            <div class="list-group list-group-flush list-group-focus list my-n3">
-                                <a class="list-group-item" href="team-overview.html">
-                                    <div class="row align-items-center">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar">
-                                                <img src="../../assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Title -->
-                                            <h4 class="text-body text-focus mb-1 name">
-                                                Airbnb
-                                            </h4>
-
-                                            <!-- Time -->
-                                            <p class="small text-muted mb-0">
-                                                <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
-                                            </p>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item" href="team-overview.html">
-                                    <div class="row align-items-center">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar">
-                                                <img src="../../assets/img/avatars/teams/team-logo-2.jpg" alt="..." class="avatar-img rounded">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Title -->
-                                            <h4 class="text-body text-focus mb-1 name">
-                                                Medium Corporation
-                                            </h4>
-
-                                            <!-- Time -->
-                                            <p class="small text-muted mb-0">
-                                                <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
-                                            </p>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item" href="project-overview.html">
-                                    <div class="row align-items-center">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-4by3">
-                                                <img src="../../assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Title -->
-                                            <h4 class="text-body text-focus mb-1 name">
-                                                Homepage Redesign
-                                            </h4>
-
-                                            <!-- Time -->
-                                            <p class="small text-muted mb-0">
-                                                <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                                            </p>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item" href="project-overview.html">
-                                    <div class="row align-items-center">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-4by3">
-                                                <img src="../../assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Title -->
-                                            <h4 class="text-body text-focus mb-1 name">
-                                                Travels & Time
-                                            </h4>
-
-                                            <!-- Time -->
-                                            <p class="small text-muted mb-0">
-                                                <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                                            </p>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item" href="project-overview.html">
-                                    <div class="row align-items-center">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-4by3">
-                                                <img src="../../assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Title -->
-                                            <h4 class="text-body text-focus mb-1 name">
-                                                Safari Exploration
-                                            </h4>
-
-                                            <!-- Time -->
-                                            <p class="small text-muted mb-0">
-                                                <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                                            </p>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item" href="profile-posts.html">
-                                    <div class="row align-items-center">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar">
-                                                <img src="../../assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Title -->
-                                            <h4 class="text-body text-focus mb-1 name">
-                                                Dianna Smiley
-                                            </h4>
-
-                                            <!-- Status -->
-                                            <p class="text-body small mb-0">
-                                                <span class="text-success">●</span> Online
-                                            </p>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item" href="profile-posts.html">
-                                    <div class="row align-items-center">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar">
-                                                <img src="../../assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Title -->
-                                            <h4 class="text-body text-focus mb-1 name">
-                                                Ab Hadley
-                                            </h4>
-
-                                            <!-- Status -->
-                                            <p class="text-body small mb-0">
-                                                <span class="text-danger">●</span> Offline
-                                            </p>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                            </div>
-
+    <!-- Topbar Start -->
+    <div class="navbar-custom">
+        <div class="container-fluid">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+                <li class="dropdown notification-list topbar-dropdown">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
+                       href="#" aria-haspopup="false" aria-expanded="false">
+                        <div class="avatar-md m-0">
+                            <span
+                                :class="`avatar-title bg-dark text-white rounded-circle`">
+                                {{ userInitials }}
+                            </span>
                         </div>
-                    </div> <!-- / .dropdown-menu -->
 
-                </div>
-            </form>
-
-            <!-- User -->
-            <div class="navbar-user">
-
-                <!-- Dropdown -->
-                <div class="dropdown me-4 d-none d-lg-flex">
-
-                    <!-- Toggle -->
-                    <a href="#" class="navbar-user-link" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="icon active">
-                            <i class="fe fe-bell"></i>
+                        <span class="pro-user-name ml-1">
+                            <i class="mdi mdi-chevron-down"></i>
                         </span>
                     </a>
 
-                    <!-- Menu -->
-                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-card">
-                        <div class="card-header">
-
-                            <!-- Title -->
-                            <h5 class="card-header-title">
-                                Notifications
-                            </h5>
-
-                            <!-- Link -->
-                            <a href="#!" class="small">
-                                View all
-                            </a>
-
-                        </div> <!-- / .card-header -->
-                        <div class="card-body">
-
-                            <!-- List group -->
-                            <div class="list-group list-group-flush list-group-activity my-n3">
-                                <a class="list-group-item text-reset" href="#!">
-                                    <div class="row">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-sm">
-                                                <img src="../../assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Content -->
-                                            <div class="small">
-                                                <strong>Dianna Smiley</strong> shared your post with Ab Hadley, Adolfo Hess, and 3 others.
-                                            </div>
-
-                                            <!-- Time -->
-                                            <small class="text-muted">
-                                                2m ago
-                                            </small>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item text-reset" href="#!">
-                                    <div class="row">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-sm">
-                                                <img src="../../assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Content -->
-                                            <div class="small">
-                                                <strong>Ab Hadley</strong> reacted to your post with a 😍
-                                            </div>
-
-                                            <!-- Time -->
-                                            <small class="text-muted">
-                                                2m ago
-                                            </small>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item text-reset" href="#!">
-                                    <div class="row">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-sm">
-                                                <img src="../../assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Content -->
-                                            <div class="small">
-                                                <strong>Adolfo Hess</strong> commented <blockquote class="mb-0">“I don’t think this really makes sense to
-                                                    do without approval
-                                                    from Johnathan since he’s the one...” </blockquote>
-                                            </div>
-
-                                            <!-- Time -->
-                                            <small class="text-muted">
-                                                2m ago
-                                            </small>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item text-reset" href="#!">
-                                    <div class="row">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-sm">
-                                                <img src="../../assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Content -->
-                                            <div class="small">
-                                                <strong>Daniela Dewitt</strong> subscribed to you.
-                                            </div>
-
-                                            <!-- Time -->
-                                            <small class="text-muted">
-                                                2m ago
-                                            </small>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item text-reset" href="#!">
-                                    <div class="row">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-sm">
-                                                <img src="../../assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Content -->
-                                            <div class="small">
-                                                <strong>Miyah Myles</strong> shared your post with Ryu Duke, Glen Rouse, and 3 others.
-                                            </div>
-
-                                            <!-- Time -->
-                                            <small class="text-muted">
-                                                2m ago
-                                            </small>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item text-reset" href="#!">
-                                    <div class="row">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-sm">
-                                                <img src="../../assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Content -->
-                                            <div class="small">
-                                                <strong>Ryu Duke</strong> reacted to your post with a 😍
-                                            </div>
-
-                                            <!-- Time -->
-                                            <small class="text-muted">
-                                                2m ago
-                                            </small>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item text-reset" href="#!">
-                                    <div class="row">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-sm">
-                                                <img src="../../assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Content -->
-                                            <div class="small">
-                                                <strong>Glen Rouse</strong> commented <blockquote class="mb-0">“I don’t think this really makes sense to
-                                                    do without approval
-                                                    from Johnathan since he’s the one...” </blockquote>
-                                            </div>
-
-                                            <!-- Time -->
-                                            <small class="text-muted">
-                                                2m ago
-                                            </small>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item text-reset" href="#!">
-                                    <div class="row">
-                                        <div class="col-auto">
-
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-sm">
-                                                <img src="../../assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-
-                                        </div>
-                                        <div class="col ms-n2">
-
-                                            <!-- Content -->
-                                            <div class="small">
-                                                <strong>Grace Gross</strong> subscribed to you.
-                                            </div>
-
-                                            <!-- Time -->
-                                            <small class="text-muted">
-                                                2m ago
-                                            </small>
-
-                                        </div>
-                                    </div> <!-- / .row -->
-                                </a>
-                            </div>
-
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+                        <!-- item-->
+                        <div class="dropdown-header noti-title">
+                            <h6 class="text-overflow m-0">Welcome {{ userName }}!</h6>
                         </div>
-                    </div> <!-- / .dropdown-menu -->
 
-                </div>
+                        <!-- item-->
 
-                <!-- Dropdown -->
-                <div class="dropdown">
+                        <div class="dropdown-divider"></div>
 
-                    <!-- Toggle -->
-                    <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <img src="../../assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                    </a>
-
-                    <!-- Menu -->
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a href="profile-posts.html" class="dropdown-item">Profile</a>
-                        <a href="account-general.html" class="dropdown-item">Settings</a>
-                        <hr class="dropdown-divider">
-                        <a href="sign-in.html" class="dropdown-item">Logout</a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item" @click="handleLogout">
+                            <i class="fe-log-out mr-10"></i>
+                            <span>Logout</span>
+                        </a>
                     </div>
+                </li>
+            </ul>
 
-                </div>
+            <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                <li>
+                    <button class="button-menu-mobile waves-effect waves-light" @click="handleButtonClick">
+                        <i class="fe-menu"></i>
+                    </button>
+                </li>
+            </ul>
 
+            <div class="logo-box d-flex align-items-center">
+                <a href="/" class="logo logo-dark mr-2">
+                    <span class="logo-sm">
+                        <img src="/logo.png" alt="" height="70" width="70" class="logoLg"/>
+                    </span>
+                    <span class="logo-lg">
+                        <img src="/logo.png" class="logoLg" alt="" height="70" width="70"/>
+                    </span>
+                </a>
+                <h3 class="medium">
+                    EMOPODS
+                </h3>
             </div>
+        </div>
 
+        <div class="linear-loader" v-if="loading">
+            <div class="train"></div>
+        </div>
+    </div>
 
-
-        </div> <!-- / .container -->
-    </nav>
 </template>
-<script>
-export default {
 
-}
+<script>
+import {onMounted, ref, watchEffect} from "vue";
+import {useRouter} from "vue-router";
+import {useUserStore} from "@/store/user";
+import {capitalizeFirstLetter, getUserInitials} from "@/utils/helpers";
+import {useAuthStore} from "@/store/authStore";
+
+export default {
+    props: {
+        loading: Boolean,
+        displaySearch: Boolean
+    },
+    setup(props, {emit}) {
+        const router = useRouter()
+        const userName = ref('')
+        const userStore = useUserStore()
+        const userInitials = ref('')
+        const loading = ref(true)
+
+        onMounted(async () => {
+            userInitials.value = getUserInitials(userStore.user.first_name, userStore.user.last_name)
+            userName.value = capitalizeFirstLetter(userStore.user.first_name, userStore.user.last_name)
+        })
+
+        const handleLogout = () => {
+            // Get all cookies
+            const cookies = document.cookie.split(';');
+
+            // Loop through cookies and remove each one
+            cookies.forEach(cookie => {
+                const cookieParts = cookie.split('=');
+                const cookieName = cookieParts[0].trim();
+                document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+            });
+
+            localStorage.clear()
+
+            const authStore = useAuthStore()
+            authStore.setAccessToken(null)
+
+            router.push({name: 'Login'})
+        }
+
+        watchEffect(() => {
+            loading.value = props.loading;
+        });
+
+        const handleButtonClick = () => {
+            emit('toggle-menu')
+        }
+
+        return {
+            loading,
+            handleLogout,
+            userName,
+            userInitials,
+            handleButtonClick,
+        }
+    }
+};
 </script>
+
 <style scoped>
-.container {
-    padding: 0 25px;
+.navbar-custom {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0;
+}
+
+.logoLg {
+    margin-left: 20px;
+}
+
+.nav-user {
+    display: flex !important;
+    align-items: center;
+}
+
+.back-icon > img {
+    cursor: pointer;
+}
+
+.linear-loader {
+    height: 8px; /* Adjust the height as needed */
+    background-color: #89a6f3; /* Adjust the color as needed */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    /* animation: moveRight 1s linear infinite; Adjust the animation speed as needed */
+}
+
+.train {
+    width: 900px; /* Adjust the train's width */
+    height: 8px; /* Should match the height of the loader */
+    background-color: #2f5bcf; /* Adjust the color as needed */
+    position: absolute;
+    animation: moveRight 1s linear infinite; /* Adjust the animation speed as needed */
+    top: 0;
+    left: 0;
+}
+
+@keyframes moveRight {
+    0% {
+        left: -50px; /* Start off the screen to the left */
+    }
+    100% {
+        left: 100%; /* Move to the right of the screen */
+    }
+}
+
+.button-menu-mobile {
+    display: none; /* Hide the button by default */
+}
+
+/* Media query to show the button on screens with a maximum width of 767px */
+@media (max-width: 767px) {
+    .button-menu-mobile {
+        display: block; /* Show the button on smaller screens */
+    }
+
+    .topbar-dropdown {
+        padding-top: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .button-menu-mobile {
+        display: block; /* Show the button on smaller screens */
+    }
+}
+
+.topnav-menu {
+    margin: 0 15px !important;
+}
+
+.avatar-md {
+    height: 44px;
+    width: 44px;
+    margin-right: 10px !important;
+}
+
+.nav-link {
+    color: #333 !important;
 }
 </style>
